@@ -1,0 +1,750 @@
+/*----------- Font -----------*/
+
+@font-face {
+	font-family: 'devicon';
+	src:url('atom://phantomo-ui/styles/icons/icons.eot');
+	src:url('atom://phantomo-ui/styles/icons/icons.eot') format('embedded-opentype'),
+		url('atom://phantomo-ui/styles/icons/icons.woff') format('woff'),
+		url('atom://phantomo-ui/styles/icons/icons.ttf') format('truetype'),
+		url('atom://phantomo-ui/styles/icons/icons.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*----------- Variables -----------*/
+
+@default:      '\e906';
+
+@android:  		 '\e920';
+@apache: 			 '\e629';
+@archive: 		 '\e904';
+@assembly: 		 '\e921';
+@bower:        '\e631';
+@caml:         '\e90f';
+@capistrano: 	 '\e909';
+@clojure: 		 '\e910';
+@coffeescript: '\e66a';
+@c: 					 '\e639';
+@cplusplus: 	 '\e635';
+@csharp: 			 '\e637';
+@css: 				 '\e679';
+@dart: 				 '\e922';
+@database: 		 '\e90a';
+@docker: 			 '\e61f';
+@elixir: 			 '\e90d';
+@erlang: 			 '\e617';
+@fsharp: 			 '\e91b';
+@git: 				 '\e7a8';
+@go: 					 '\e61b';
+@grunt: 			 '\e7eb';
+@gulp:         '\e7ec';
+@hack: 				 '\e91a';
+@haml: 				 '\e90e';
+@haskell:	     '\e901';
+@haxe: 				 '\e919';
+@heroku: 			 '\e60f';
+@html:         '\e7f7';
+@illustrator:  '\e7fa';
+@image: 			 '\e903';
+@java: 				 '\e842';
+@javascript:   '\e845';
+@jekyll: 			 '\e912';
+@jquery:       '\e84a';
+@julia: 			 '\e918';
+@json: 				 '\e908';
+@laravel: 		 '\e90c';
+@latex: 			 '\e91c';
+@less:         '\e853';
+@liquid: 			 '\e916';
+@lua: 				 '\e923';
+@markdown: 		 '\e914';
+@mustache: 		 '\e917';
+@mysql: 			 '\eb61';
+@nginx: 			 '\e615';
+@npm: 				 '\e907';
+@pascal: 			 '\e91d';
+@perl: 				 '\e90f';
+@photoshop:		 '\eb6d';
+@php: 				 '\eb71';
+@postgresql: 	 '\eb7d';
+@pug: 				 '\e913';
+@puppet: 			 '\e928';
+@python: 			 '\eb89';
+@ruby: 				 '\ebca';
+@sass: 				 '\ebcb';
+@scala: 			 '\e911';
+@shell: 			 '\e905';
+@stylus:       '\e91f';
+@swift: 			 '\e900';
+@template: 		 '\e926';
+@textile: 		 '\e915';
+@travis: 			 '\ebcd';
+@twig:         '\e90b';
+@type: 				 '\e927';
+@typescript:   '\e925';
+@vagrant: 		 '\e924';
+@vbnet: 			 '\e91e';
+@xml: 				 '\e902';
+@yii: 			 	 '\ec02';
+
+/*----------- Declarations -----------*/
+
+.tab .title:before,
+.file.icon:before {
+	position: relative;
+	margin-right: 6px;
+	line-height: 18px;
+	font-style: normal;
+	top: 4px;
+}
+
+.name.icon:before {
+	margin-right: 8px;
+}
+
+.name.icon.icon-file-text:before,
+.name.icon.icon-book:before,
+.name.icon.icon-file-binary:before,
+.name.icon.icon-file-zip:before,
+.name.icon.icon-file-media:before,
+.file.icon.icon-file-text:before,
+.file.icon.icon-book:before,
+.file.icon.icon-file-binary:before,
+.file.icon.icon-file-zip:before,
+.file.icon.icon-file-media:before,
+.tab .title:before {
+	font-family: 'devicon';
+	content: @default;
+	font-size: 18px;
+	top: 4px;
+}
+
+.name.icon[data-name$=".apk"]:before,
+.file.icon[data-name$=".apk"]:before,
+.tab .title[data-name$=".apk"]:before {
+  content: @android;
+	color: #a7c839;
+}
+
+.name.icon[data-name$="httpd.conf"]:before,
+.name.icon[data-name$=".htaccess"]:before,
+.file.icon[data-name$="httpd.conf"]:before,
+.file.icon[data-name$=".htaccess"]:before,
+.tab .title[data-name$="httpd.conf"]:before,
+.tab .title[data-name$=".htaccess"]:before {
+  content: @apache;
+	color: #b31041;
+}
+
+.name.icon[data-name$=".tar"]:before,
+.name.icon[data-name$=".bz2"]:before,
+.name.icon[data-name$=".gz"]:before,
+.name.icon[data-name$=".7z"]:before,
+.name.icon[data-name$=".zip"]:before,
+.name.icon[data-name$=".rar"]:before,
+.file.icon[data-name$=".tar"]:before,
+.file.icon[data-name$=".bz2"]:before,
+.file.icon[data-name$=".gz"]:before,
+.file.icon[data-name$=".7z"]:before,
+.file.icon[data-name$=".zip"]:before,
+.file.icon[data-name$=".rar"]:before,
+.tab .title[data-name$=".tar"]:before,
+.tab .title[data-name$=".bz2"]:before,
+.tab .title[data-name$=".gz"]:before,
+.tab .title[data-name$=".7z"]:before,
+.tab .title[data-name$=".zip"]:before,
+.tab .title[data-name$=".rar"]:before {
+  content: @archive;
+}
+
+.name.icon[data-name$=".asm"]:before,
+.name.icon[data-name$=".s"]:before,
+.file.icon[data-name$=".asm"]:before,
+.file.icon[data-name$=".s"]:before,
+.tab .title[data-name$=".asm"]:before,
+.tab .title[data-name$=".s"]:before {
+  content: @assembly;
+	color: #3D5AC2;
+}
+
+.name.icon[data-name$=".json"]:before,
+.file.icon[data-name$=".json"]:before,
+.tab .title[data-name$=".json"]:before {
+  content: @json;
+	color: #FDF6E3;
+}
+
+.name.icon[data-name$="bower.json"]:before,
+.file.icon[data-name$="bower.json"]:before,
+.tab .title[data-name$="bower.json"]:before {
+  content: @bower;
+	color: #ef5734;
+}
+
+.name.icon[data-name$="Capfile"]:before,
+.file.icon[data-name$="Capfile"]:before,
+.tab .title[data-name$="Capfile"]:before {
+  content: @capistrano;
+	color: #00aee8;
+}
+
+.name.icon[data-name$=".ml"]:before,
+.name.icon[data-name$=".mli"]:before,
+.file.icon[data-name$=".ml"]:before,
+.file.icon[data-name$=".mli"]:before,
+.tab .title[data-name$=".ml"]:before,
+.tab .title[data-name$=".mli"]:before {
+  content: @caml;
+	color: #f48b1e;
+}
+
+.name.icon[data-name$=".clj"]:before,
+.name.icon[data-name$=".cljs"]:before,
+.name.icon[data-name$=".cljc"]:before,
+.name.icon[data-name$=".edn"]:before,
+.file.icon[data-name$=".clj"]:before,
+.file.icon[data-name$=".cljs"]:before,
+.file.icon[data-name$=".cljc"]:before,
+.file.icon[data-name$=".edn"]:before,
+.tab .title[data-name$=".clj"]:before,
+.tab .title[data-name$=".cljs"]:before,
+.tab .title[data-name$=".cljc"]:before,
+.tab .title[data-name$=".edn"]:before {
+  content: @clojure;
+	color: #5881d8;
+}
+
+.name.icon[data-name$=".coffee"]:before,
+.file.icon[data-name$=".coffee"]:before,
+.tab .title[data-name$=".coffee"]:before {
+  content: @coffeescript;
+	color: #6C5B54;
+}
+
+.name.icon[data-name$=".c"]:before,
+.name.icon[data-name$=".h"]:before,
+.file.icon[data-name$=".c"]:before,
+.file.icon[data-name$=".h"]:before,
+.tab .title[data-name$=".c"]:before,
+.tab .title[data-name$=".h"]:before {
+  content: @c;
+	color: #03599c;
+}
+
+.name.icon[data-name$=".cpp"]:before,
+.name.icon[data-name$=".hpp"]:before,
+.file.icon[data-name$=".cpp"]:before,
+.file.icon[data-name$=".hpp"]:before,
+.tab .title[data-name$=".cpp"]:before,
+.tab .title[data-name$=".hpp"]:before {
+  content: @cplusplus;
+	color: #9c033a;
+}
+
+.name.icon[data-name$=".cs"]:before,
+.file.icon[data-name$=".cs"]:before,
+.tab .title[data-name$=".cs"]:before {
+  content: @csharp;
+	color: #68217a;
+}
+
+.name.icon[data-name$=".css"]:before,
+.file.icon[data-name$=".css"]:before,
+.tab .title[data-name$=".css"]:before {
+  content: @css;
+	color: #3d8fc6;
+}
+
+.name.icon[data-name$=".dart"]:before,
+.file.icon[data-name$=".dart"]:before,
+.tab .title[data-name$=".dart"]:before {
+  content: @dart;
+	color: #00b4aa;
+}
+
+.name.icon[data-name$="Dockerfile"]:before,
+.file.icon[data-name$="Dockerfile"]:before,
+.tab .title[data-name$="Dockerfile"]:before {
+  content: @docker;
+	color: #019bc6;
+}
+
+.name.icon[data-name$=".ex"]:before,
+.name.icon[data-name$=".exs"]:before,
+.file.icon[data-name$=".ex"]:before,
+.file.icon[data-name$=".exs"]:before,
+.tab .title[data-name$=".ex"]:before,
+.tab .title[data-name$=".exs"]:before {
+  content: @elixir;
+	color: #675075;
+}
+
+.name.icon[data-name$=".erl"]:before,
+.name.icon[data-name$=".hrl"]:before,
+.file.icon[data-name$=".erl"]:before,
+.file.icon[data-name$=".hrl"]:before,
+.tab .title[data-name$=".erl"]:before,
+.tab .title[data-name$=".hrl"]:before {
+  content: @erlang;
+	color: #a90533;
+}
+
+.name.icon[data-name$=".fs"]:before,
+.name.icon[data-name$=".fsi"]:before,
+.name.icon[data-name$=".fsx"]:before,
+.name.icon[data-name$=".fsscript"]:before,
+.file.icon[data-name$=".fs"]:before,
+.file.icon[data-name$=".fsi"]:before,
+.file.icon[data-name$=".fsx"]:before,
+.file.icon[data-name$=".fsscript"]:before,
+.tab .title[data-name$=".fs"]:before,
+.tab .title[data-name$=".fsi"]:before,
+.tab .title[data-name$=".fsx"]:before,
+.tab .title[data-name$=".fsscript"]:before {
+  content: @fsharp;
+	color: #30b9db;
+}
+
+.name.icon[data-name$=".gitignore"]:before,
+.name.icon[data-name$=".gitattributes"]:before,
+.file.icon[data-name$=".gitignore"]:before,
+.file.icon[data-name$=".gitattributes"]:before,
+.tab .title[data-name$=".gitignore"]:before,
+.tab .title[data-name$=".gitattributes"]:before {
+	content: @git;
+	color: #f34f29;
+}
+
+.name.icon[data-name$=".go"]:before,
+.file.icon[data-name$=".go"]:before,
+.tab .title[data-name$=".go"]:before {
+	content: @go;
+	color: ;
+}
+
+.name.icon[data-name$=".js"]:before,
+.file.icon[data-name$=".js"]:before,
+.tab .title[data-name$=".js"]:before {
+  content: @javascript;
+	color: #f0db4f;
+}
+
+.name.icon[data-name$="gruntfile.js"]:before,
+.name.icon[data-name$="gruntfile.coffee"]:before,
+.file.icon[data-name$="gruntfile.js"]:before,
+.file.icon[data-name$="gruntfile.coffee"]:before,
+.tab .title[data-name$="gruntfile.js"]:before,
+.tab .title[data-name$="gruntfile.coffee"]:before {
+  content: @grunt;
+	color: #fcaa1a;
+}
+
+.name.icon[data-name$="gulpfile.js"]:before,
+.file.icon[data-name$="gulpfile.js"]:before,
+.tab .title[data-name$="gulpfile.js"]:before {
+  content: @gulp;
+	color: #eb4a4b;
+}
+
+.name.icon[data-name$=".haml"]:before,
+.file.icon[data-name$=".haml"]:before,
+.tab .title[data-name$=".haml"]:before {
+  content: @haml;
+	color: #ece2a9;
+}
+
+.name.icon[data-name$=".hhconfig"]:before,
+.file.icon[data-name$=".hhconfig"]:before,
+.tab .title[data-name$=".hhconfig"]:before {
+  content: @hack;
+	color: #e78601;
+}
+
+.name.icon[data-name$=".handlebars"]:before,
+.file.icon[data-name$=".handlebars"]:before,
+.tab .title[data-name$=".handlebars"]:before {
+  content: @mustache;
+	color: #ee6b2b;
+}
+
+.name.icon[data-name$=".hs"]:before,
+.name.icon[data-name$=".lhs"]:before,
+.file.icon[data-name$=".hs"]:before,
+.file.icon[data-name$=".lhs"]:before,
+.tab .title[data-name$=".hs"]:before,
+.tab .title[data-name$=".lhs"]:before {
+  content: @haskell;
+	color: #979797;
+}
+
+.name.icon[data-name$=".hx"]:before,
+.name.icon[data-name$=".hxml"]:before,
+.file.icon[data-name$=".hx"]:before,
+.file.icon[data-name$=".hxml"]:before,
+.tab .title[data-name$=".hx"]:before,
+.tab .title[data-name$=".hxml"]:before {
+  content: @haxe;
+	color: #f68712;
+}
+
+.name.icon[data-name$="Procfile"]:before,
+.file.icon[data-name$="Procfile"]:before,
+.tab .title[data-name$="Procfile"]:before {
+  content: @heroku;
+	color: #6762a6;
+}
+
+.name.icon[data-name$=".html"]:before,
+.file.icon[data-name$=".html"]:before,
+.tab .title[data-name$=".html"]:before {
+  content: @html;
+	color: #e54d26;
+}
+
+.name.icon[data-name$=".ai"]:before,
+.file.icon[data-name$=".ai"]:before,
+.tab .title[data-name$=".ai"]:before {
+  content: @illustrator;
+	color: #faa625;
+}
+
+.name.icon[data-name$=".png"]:before,
+.name.icon[data-name$=".gif"]:before,
+.name.icon[data-name$=".jpeg"]:before,
+.name.icon[data-name$=".svg"]:before,
+.file.icon[data-name$=".png"]:before,
+.file.icon[data-name$=".gif"]:before,
+.file.icon[data-name$=".jpeg"]:before,
+.file.icon[data-name$=".svg"]:before,
+.tab .title[data-name$=".png"]:before,
+.tab .title[data-name$=".gif"]:before,
+.tab .title[data-name$=".jpeg"]:before,
+.tab .title[data-name$=".svg"]:before {
+  content: @image;
+	color: #1e90ff;
+}
+
+.name.icon[data-name$=".java"]:before,
+.file.icon[data-name$=".java"]:before,
+.tab .title[data-name$=".java"]:before {
+  content: @java;
+	color: #ea2D2e;
+}
+
+.name.icon[data-name$="_config.yml"]:before,
+.name.icon[data-name$=".jekyll-matadata"]:before,
+.file.icon[data-name$="_config.yml"]:before,
+.file.icon[data-name$=".jekyll-matadata"]:before,
+.tab .title[data-name$="_config.yml"]:before,
+.tab .title[data-name$=".jekyll-matadata"]:before {
+  content: @jekyll;
+	color: #cb0000;
+}
+
+.name.icon[data-name$=".jquery.js"]:before,
+.name.icon[data-name^="jquery."]:before,
+.file.icon[data-name$=".jquery.js"]:before,
+.file.icon[data-name^="jquery."]:before,
+.tab .title[data-name$=".jquery.js"]:before,
+.tab .title[data-name^="jquery."]:before {
+  content: @jquery;
+	color: #0769ad;
+}
+
+.name.icon[data-name$=".jl"]:before,
+.file.icon[data-name$=".jl"]:before,
+.tab .title[data-name$=".jl"]:before {
+  content: @julia;
+	color: #9558b2;
+}
+
+.name.icon[data-name$=".tex"]:before,
+.file.icon[data-name$=".tex"]:before,
+.tab .title[data-name$=".tex"]:before {
+  content: @latex;
+	color: #FDF6E3;
+}
+
+.name.icon[data-name$=".less"]:before,
+.file.icon[data-name$=".less"]:before,
+.tab .title[data-name$=".less"]:before {
+  content: @less;
+	color: #3864a5;
+}
+
+.name.icon[data-name$=".liquid"]:before,
+.file.icon[data-name$=".liquid"]:before,
+.tab .title[data-name$=".liquid"]:before {
+  content: @liquid;
+	color: #1e90ff;
+}
+
+.name.icon[data-name$=".lua"]:before,
+.file.icon[data-name$=".lua"]:before,
+.tab .title[data-name$=".lua"]:before {
+  content: @lua;
+	color: #3A3AD6;
+}
+
+
+.name.icon[data-name$=".sql"]:before,
+.file.icon[data-name$=".sql"]:before,
+.tab .title[data-name$=".sql"]:before {
+  content: @mysql;
+	color: #007FB6;
+}
+
+.name.icon[data-name$=".md"]:before,
+.name.icon[data-name$=".markdown"]:before,
+.file.icon[data-name$=".md"]:before,
+.file.icon[data-name$=".markdown"]:before,
+.tab .title[data-name$=".md"]:before,
+.tab .title[data-name$=".markdown"]:before {
+  content: @markdown;
+	color: #FDF6E3;
+}
+
+.name.icon[data-name$=".mustache"]:before,
+.file.icon[data-name$=".mustache"]:before,
+.tab .title[data-name$=".mustache"]:before {
+  content: @mustache;
+	color: #FDF6E3;
+}
+
+.name.icon[data-name$="nginx.conf"]:before,
+.file.icon[data-name$="nginx.conf"]:before,
+.tab .title[data-name$="nginx.conf"]:before {
+  content: @nginx;
+	color: #090;
+}
+
+.name.icon[data-name$="package.json"]:before,
+.file.icon[data-name$="package.json"]:before,
+.tab .title[data-name$="package.json"]:before {
+  content: @npm;
+	color: #DB3C3C;
+}
+
+.name.icon[data-name$=".dbf"]:before,
+.name.icon[data-name$=".db"]:before,
+.file.icon[data-name$=".dbf"]:before,
+.file.icon[data-name$=".db"]:before,
+.tab .title[data-name$=".dbf"]:before,
+.tab .title[data-name$=".db"]:before {
+  content: @database;
+	color: #FDF6E3;
+}
+
+.name.icon[data-name$=".p"]:before,
+.name.icon[data-name$=".pas"]:before,
+.file.icon[data-name$=".p"]:before,
+.file.icon[data-name$=".pas"]:before,
+.tab .title[data-name$=".p"]:before,
+.tab .title[data-name$=".pas"]:before {
+  content: @pascal;
+	color: #e42627;
+}
+
+.name.icon[data-name$=".pl"]:before,
+.name.icon[data-name$=".pm"]:before,
+.name.icon[data-name$=".t"]:before,
+.name.icon[data-name$=".pod"]:before,
+.file.icon[data-name$=".pl"]:before,
+.file.icon[data-name$=".pm"]:before,
+.file.icon[data-name$=".t"]:before,
+.file.icon[data-name$=".pod"]:before,
+.tab .title[data-name$=".pl"]:before,
+.tab .title[data-name$=".pm"]:before,
+.tab .title[data-name$=".t"]:before,
+.tab .title[data-name$=".pod"]:before {
+  content: @perl;
+	color: #0096c1;
+}
+
+.name.icon[data-name$=".psd"]:before,
+.file.icon[data-name$=".psd"]:before,
+.tab .title[data-name$=".psd"]:before {
+  content: @photoshop;
+	color: #80b5e2;
+}
+
+.name.icon[data-name$=".php"]:before,
+.file.icon[data-name$=".php"]:before,
+.tab .title[data-name$=".php"]:before {
+  content: @php;
+	color: #5B87D2;
+}
+
+.name.icon[data-name$=".blade.php"]:before,
+.file.icon[data-name$=".blade.php"]:before,
+.tab .title[data-name$=".blade.php"]:before {
+  content: @laravel;
+	color: #fa503a;
+}
+
+.name.icon[data-name$=".psql"]:before,
+.file.icon[data-name$=".psql"]:before,
+.tab .title[data-name$=".psql"]:before {
+  content: @postgresql;
+	color: #2672B2;
+}
+
+.name.icon[data-name$=".pug"]:before,
+.file.icon[data-name$=".pug"]:before,
+.tab .title[data-name$=".pug"]:before {
+  content: @pug;
+	color: #c2272d;
+}
+
+.name.icon[data-name$=".pp"]:before,
+.file.icon[data-name$=".pp"]:before,
+.tab .title[data-name$=".pp"]:before {
+  content: @puppet;
+	color: #7c64a5;
+}
+
+.name.icon[data-name$=".py"]:before,
+.file.icon[data-name$=".py"]:before,
+.tab .title[data-name$=".py"]:before {
+  content: @python;
+	color: #ffd845;
+}
+
+.name.icon[data-name$=".rb"]:before,
+.file.icon[data-name$=".rb"]:before,
+.tab .title[data-name$=".rb"]:before {
+  content: @ruby;
+	color: #d91404;
+}
+
+.name.icon[data-name$=".scss"]:before,
+.name.icon[data-name$=".sass"]:before,
+.file.icon[data-name$=".scss"]:before,
+.file.icon[data-name$=".sass"]:before,
+.tab .title[data-name$=".scss"]:before,
+.tab .title[data-name$=".sass"]:before {
+  content: @sass;
+	color: #cc6699;
+}
+
+.name.icon[data-name$=".scala"]:before,
+.name.icon[data-name$=".sc"]:before,
+.file.icon[data-name$=".scala"]:before,
+.file.icon[data-name$=".sc"]:before,
+.tab .title[data-name$=".scala"]:before,
+.tab .title[data-name$=".sc"]:before {
+  content: @scala;
+	color: #de322f;
+}
+
+.name.icon[data-name$=".sh"]:before,
+.name.icon[data-name$=".bat"]:before,
+.name.icon[data-name$=".command"]:before,
+.file.icon[data-name$=".sh"]:before,
+.file.icon[data-name$=".bat"]:before,
+.file.icon[data-name$=".command"]:before,
+.tab .title[data-name$=".sh"]:before,
+.tab .title[data-name$=".bat"]:before,
+.tab .title[data-name$=".command"]:before {
+  content: @shell;
+	color: #FDF6E3;
+}
+
+.name.icon[data-name$=".styl"]:before,
+.file.icon[data-name$=".styl"]:before,
+.tab .title[data-name$=".styl"]:before {
+  content: @stylus;
+	color: #ff6347;
+}
+
+.name.icon[data-name$=".swift"]:before,
+.file.icon[data-name$=".swift"]:before,
+.tab .title[data-name$=".swift"]:before {
+  content: @swift;
+	color: #ff4e31;
+}
+
+.name.icon[data-name$=".tpl"]:before,
+.file.icon[data-name$=".tpl"]:before,
+.tab .title[data-name$=".tpl"]:before {
+  content: @template;
+	color: #1e90ff;
+}
+
+.name.icon[data-name$=".textile"]:before,
+.file.icon[data-name$=".textile"]:before,
+.tab .title[data-name$=".textile"]:before {
+  content: @textile;
+	color: #FDF6E3;
+}
+
+.name.icon[data-name$=".travis.yml"]:before,
+.file.icon[data-name$=".travis.yml"]:before,
+.tab .title[data-name$=".travis.yml"]:before {
+  content: @travis;
+	color: #bb2031;
+}
+
+.name.icon[data-name$=".html.twig"]:before,
+.name.icon[data-name$=".twig"]:before,
+.file.icon[data-name$=".html.twig"]:before,
+.file.icon[data-name$=".twig"]:before,
+.tab .title[data-name$=".html.twig"]:before,
+.tab .title[data-name$=".twig"]:before {
+  content: @twig;
+	color: #b1C73e;
+}
+
+.name.icon[data-name$=".eot"]:before,
+.name.icon[data-name$=".otf"]:before,
+.name.icon[data-name$=".ttf"]:before,
+.name.icon[data-name$=".woff"]:before,
+.name.icon[data-name$=".woff2"]:before,
+.file.icon[data-name$=".eot"]:before,
+.file.icon[data-name$=".otf"]:before,
+.file.icon[data-name$=".ttf"]:before,
+.file.icon[data-name$=".woff"]:before,
+.file.icon[data-name$=".woff2"]:before,
+.tab .title[data-name$=".eot"]:before,
+.tab .title[data-name$=".otf"]:before,
+.tab .title[data-name$=".ttf"]:before,
+.tab .title[data-name$=".woff"]:before,
+.tab .title[data-name$=".woff2"]:before {
+  content: @type;
+	color: #FDF6E3;
+}
+
+.name.icon[data-name$=".ts"]:before,
+.file.icon[data-name$=".ts"]:before,
+.tab .title[data-name$=".ts"]:before {
+  content: @typescript;
+	color: #007acc;
+}
+
+.name.icon[data-name$="Vagrantfile"]:before,
+.file.icon[data-name$="Vagrantfile"]:before,
+.tab .title[data-name$="Vagrantfile"]:before {
+  content: @vagrant;
+	color: #60b0e1;
+}
+
+.name.icon[data-name$=".vb"]:before,
+.file.icon[data-name$=".vb"]:before,
+.tab .title[data-name$=".vb"]:before {
+  content: @vbnet;
+	color: #4fafcd;
+}
+
+.name.icon[data-name$=".xml"]:before,
+.file.icon[data-name$=".xml"]:before,
+.tab .title[data-name$=".xml"]:before {
+  content: @xml;
+	color: #f67800;
+}
+
+.name.icon[data-name$="yiic"]:before,
+.file.icon[data-name$="yiic"]:before,
+.tab .title[data-name$="yiic"]:before {
+  content: @yii;
+	color: #0073bb;
+}
