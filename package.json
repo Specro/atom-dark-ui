@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "description": "An Atom UI theme based on Atom Dark UI and extended with DevIcons and MFizz icons",
   "license": "MIT",
-  "repository": "https://github.com/Specro/atom-dark-ui",
+  "repository": "https://github.com/Specro/phantom-ui",
   "engines": {
     "atom": ">0.40.0"
   }

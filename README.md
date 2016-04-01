@@ -10,7 +10,7 @@ Phantom has a sleek dark UI with blue accents.
 
 ## Icons
 
-![](https://github.com/Specro/atom-dark-ui/raw/master/ui.png)
+![](https://github.com/Specro/atom-dark-ui/raw/master/icons.png)
 
 Phantom contains 71 icons, from generic to most specific ones.
 
